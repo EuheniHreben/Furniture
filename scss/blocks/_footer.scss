@@ -1,0 +1,25 @@
+.footer {
+  padding-top: 50px;
+  & .container {
+    display: flex;
+  }
+}
+
+.col-1, 
+.col-2, 
+.col-3, 
+.col-4 {
+  flex: 1;
+  margin-right: 80px;
+  margin-bottom: 50px;
+  &:last-child {
+    margin-right: 0px;
+  }
+  & li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  & li:first-child {
+    font-weight: bold;
+  }
+}

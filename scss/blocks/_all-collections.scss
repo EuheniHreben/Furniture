@@ -1,0 +1,42 @@
+.all-collections {
+  background: #F7F8FA;
+  & .button {
+    padding: 26px 40px;
+    background: $green;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 260px;
+  }
+}
+
+.button__line {
+  display: flex;
+  margin-right: 30px;
+  flex-direction: column;
+  & span {
+    width: 34px;
+    height: 4px;
+    background-color: #fff;
+    margin: 3px 0;
+    border-radius: 25px;
+  }
+}
+
+.all-collections .container {
+  display: flex;
+}
+
+.all-collections__list {
+  display: flex;
+}
+
+.all-collections__item {
+  padding: 26px 60px;
+  height: 100%;
+  cursor: pointer;
+  &:hover {
+    background: #dedddd;
+    transition: all 0.3s ease;
+  }
+}

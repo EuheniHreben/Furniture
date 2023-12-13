@@ -1,0 +1,47 @@
+.review .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    right: 10px;
+    padding: 30px;
+    color: $green;
+}
+
+.review__item {
+  position: relative;
+  background: #F8FAFB;
+  padding: 80px 125px 50px;
+  margin: 50px 0px;
+}
+
+.review__avatar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 88px;
+  height: 88px;
+}
+
+.swiper-slide p {
+  margin-bottom: 30px;
+}
+
+.review__name {
+  font-size: 24px;
+  font-weight: 600;
+}

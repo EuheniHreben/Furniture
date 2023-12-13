@@ -1,0 +1,9 @@
+.top {
+  background: $green;
+  color: #fff;
+  padding: 16px 0;
+  & .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

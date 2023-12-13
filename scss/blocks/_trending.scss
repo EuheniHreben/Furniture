@@ -1,0 +1,91 @@
+.trending {
+  margin-bottom: 100px;
+}
+
+.trending h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.trending__list-menu {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-bottom: 35px;
+}
+
+.trending__item-menu {
+  cursor: pointer;
+  color: #C2C2C2;
+  &:hover {
+    color: $green;
+  }
+}
+
+.trending__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.trending__item {
+  width: 270px;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-bottom: 25px;
+  position: relative;
+  &:nth-child(4n+4) {
+    margin-right: 0px;
+  }
+}
+
+.trending__item--new::after {
+  content: "New";
+  display: flex;
+  padding: 2px 8px;
+  color: #fff;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 45px;
+  height: 20px;
+  background-color: #00B7F1;
+  border-bottom-right-radius: 5px;
+}
+
+.trending__item--sale::after {
+  content: "Sale";
+  display: flex;
+  padding: 2px 8px;
+  color: #fff;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 45px;
+  height: 20px;
+  background-color: $green;
+  border-bottom-right-radius: 5px;
+}
+
+.trending__type {
+  color: #757575;
+  font-size: 14px;
+}
+
+.trending__name {
+  font-size: 20px;
+}
+
+.trending__prize {
+  font-size: 18px;
+  color: $green;
+}
